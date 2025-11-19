@@ -24,7 +24,7 @@ export default function TabOneScreen() {
 <View style={styles.form}>
   <View style={styles.formItem}>
     <Text style={styles.text}>Email</Text>
-    <TextInput style={styles.input} placeholder="Digite seu email" />
+    <TextInput style={styles.input} placeholder="Digite seu e-mail" />
   </View>
 
     <View style={styles.formItem}>
