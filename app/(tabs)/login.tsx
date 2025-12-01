@@ -11,8 +11,8 @@ export default function LoginScreen() {
   const [showPassword, setShowPassword] = useState(false);
 
   function handleLogin() {
-    // Navegação simples sem autenticação
-    router.push('/' as any);
+    // Navegação simples sem autenticação: vai para a Home
+    router.push('/home' as any);
   }
 
   return (
@@ -34,12 +34,12 @@ export default function LoginScreen() {
       <View style={styles.form}>
         <View style={styles.formItem}>
           <Text style={styles.text}>Email</Text>
-          <TextInput style={styles.input} placeholder="Digite seu email" placeholderTextColor="#eee" />
+            <TextInput style={styles.input} placeholder="Digite seu email" placeholderTextColor="#fff" />
         </View>
 
         <View style={styles.formItem}>
           <Text style={styles.text}>Senha</Text>
-          <TextInput secureTextEntry={!showPassword} style={styles.input} placeholder="Digite sua senha" placeholderTextColor="#eee" />
+            <TextInput secureTextEntry={!showPassword} style={styles.input} placeholder="Digite sua senha" placeholderTextColor="#fff" />
           <TouchableOpacity onPress={() => setShowPassword(p => !p)} style={styles.icone}>
             <Entypo name="eye" size={22} color="#fff" />
           </TouchableOpacity>

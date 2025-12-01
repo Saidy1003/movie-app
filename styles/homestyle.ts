@@ -4,7 +4,7 @@ import { StyleSheet } from "react-native";
 const BACKGROUND_APP = "#C9BDBD"; // tom acinzentado-rosado
 const INPUT_BG = "#6B1A1A"; // bordô escuro dos campos
 const BUTTON_PINK = "#F08C8C"; // botão coral/rosa claro
-const TEXT_DARK = "#222";
+const TEXT_DARK = "#222222ff";
 
 const styles = StyleSheet.create({
   container: {

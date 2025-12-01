@@ -26,17 +26,17 @@ export default function RegisterScreen() {
         
         <View style={styles.formItem}>
           <Text style={styles.text}>Nome</Text>
-          <TextInput style={styles.input} placeholder="Digite seu nome" />
+          <TextInput style={styles.input} placeholder="Digite seu nome" placeholderTextColor="#fff" />
         </View>
 
         <View style={styles.formItem}>
           <Text style={styles.text}>Email</Text>
-          <TextInput style={styles.input} placeholder="Digite seu email" />
+          <TextInput style={styles.input} placeholder="Digite seu email" placeholderTextColor="#fff" />
         </View>
 
         <View style={styles.formItem}>
           <Text style={styles.text}>Senha</Text>
-          <TextInput secureTextEntry={!showPassword} style={styles.input} placeholder="Digite sua senha" placeholderTextColor="#eee" />
+          <TextInput secureTextEntry={!showPassword} style={styles.input} placeholder="Digite sua senha" placeholderTextColor="#fff" />
           <TouchableOpacity onPress={() => setShowPassword(s => !s)} style={styles.icone}>
             <Entypo name="eye" size={22} color="#fff" />
           </TouchableOpacity>
